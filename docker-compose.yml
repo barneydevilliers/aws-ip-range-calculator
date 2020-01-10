@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  aws-range-filter:
+    image: ruby:2.7.0-slim-buster
+    volumes:
+      - .:/data
+    command: ruby /data/aws-ip-range.rb
